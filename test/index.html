@@ -16,9 +16,6 @@
     <!-- 引入我们首页的js文件 -->
     <script src="js/index.js"></script>
 
-
-
-
 </head>
 
 <body>
@@ -46,20 +43,24 @@
 
     <!-- nav模块制作 start-->
     <div class="nav w">
-        <div class="fl">
-            <div class="hotwrods">
-                <a href="" class="text1">AudienceOverview</a>
-                <a href="" class="text2">Roseville,CA</a>
-            </div>
+
+        <div class="hotwrods fl">
+            <a href="" class="text1">AudienceOverview</a>
+            <a href="" class="text2">Roseville,CA</a>
+
         </div>
         <div class="navitems fr">
-            <ul>
-                <li><a href="#">DASHBOARD</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CALENDAR</a></li>
-                <li><a href="#">MAILBOX</a></li>
-                <li><a href="#">SETTINGS</a></li>
-            </ul>
+            <div class="box">
+                <ul id="uu">
+                    <li>DASHBOARD</li>
+                    <li>PROJECTS</li>
+                    <li>CALENDAR</li>
+                    <li>MAILBOX</li>
+                    <li>SETTINGS</li>
+                    <li>DDFTINL</li>
+                    <div class="admin"></div>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- nav模块制作 end-->
@@ -205,6 +206,17 @@
     <script src="js/echarts.min.js"></script>
     <!-- 引入我们首页的js文件 -->
     <script src="js/index.js"></script>
+    <script>
+        let li = document.getElementById('uu').getElementsByTagName('li')
+        let admin = document.querySelector('.admin')
+        for (let i = 0; i < li.length; i++) {
+            ! function() {
+                li[i].onmouseover = function() {
+                    admin.style.left = i * 80 + 'px'
+                }
+            }(i)
+        }
+    </script>
 </body>
 
 </html>
