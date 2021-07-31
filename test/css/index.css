@@ -81,31 +81,10 @@
     float: right;
 }
 
-.nav {
-    height: 168px;
-    background-color: rgb(248, 248, 216);
-    margin-top: 20px;
-}
-
-.nav ul {
-    line-height: 168px;
-}
-
-.nav ul li {
-    float: right;
-}
-
-.nav li a {
-    display: block;
-    height: 40px;
-    padding: 82px 25px;
-    line-height: 45px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
 .hotwrods {
     position: relative;
+    height: 168px;
+    width: 565px;
 }
 
 .text1 {
@@ -343,6 +322,56 @@ h2 {
     background-color: #fff;
 }
 
-.navitems .current {
-    background-color: #fad5d8;
+
+/*导航模块*/
+
+.navitems {
+    width: 565px;
+    height: 168px;
+}
+
+.nav {
+    height: 168px;
+    background-color: rgb(248, 248, 216);
+    margin-top: 20px;
+}
+
+.box {
+    margin: 70px auto;
+}
+
+.box ul {
+    position: relative;
+    display: flex;
+    width: 480px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #f5f8f9;
+    padding: unset;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.box li {
+    width: 80px;
+    border-radius: 10px;
+    z-index: 2;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    color: #262b2e;
+    font-weight: 700;
+}
+
+.admin {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    transition: all .5s;
+    border-radius: 10px;
+    z-index: 1;
+    height: 45px;
+    width: 80px;
+    border-bottom: 4px solid #cccfd0;
+    background-color: rgb(222, 245, 185);
 }
